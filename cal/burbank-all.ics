@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Chris Guerrero//AFF 2026 Connect Kit//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:burbank-1@mindshawk.github.io
+DTSTAMP:20261026T180000Z
+DTSTART;TZID=America/Chicago:20261030T151000
+DTEND;TZID=America/Chicago:20261030T170500
+SUMMARY:No One Wants To Live In Burbank (AFF 2026)
+LOCATION:Galaxy Theatre\, Screen 5\, 6700 Middle Fiskville Rd\, Austin\, TX
+  78752
+DESCRIPTION:Shorts Program 9: Sense of Place. Burbank screens 2nd of 7.\nht
+ tps://mindshawk.github.io/chrisguerrero/
+URL:https://mindshawk.github.io/chrisguerrero/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:burbank-2@mindshawk.github.io
+DTSTAMP:20261026T180000Z
+DTSTART;TZID=America/Chicago:20261104T190000
+DTEND;TZID=America/Chicago:20261104T205500
+SUMMARY:No One Wants To Live In Burbank (AFF 2026)
+LOCATION:Galaxy Theatre\, Screen 5\, 6700 Middle Fiskville Rd\, Austin\, TX
+  78752
+DESCRIPTION:Shorts Program 9: Sense of Place. Burbank screens 2nd of 7.\nht
+ tps://mindshawk.github.io/chrisguerrero/
+URL:https://mindshawk.github.io/chrisguerrero/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
