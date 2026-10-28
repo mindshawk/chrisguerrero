@@ -11,407 +11,506 @@
 <meta property="og:site_name" content="Chris Guerrero">
 <meta property="og:title" content="No One Wants To Live In Burbank · Chris Guerrero">
 <meta property="og:description" content="World Premiere, Austin Film Festival 2026. Tap to get the screener + deck.">
-<meta property="og:image" content="https://mindshawk.github.io/chrisguerrero/assets/og-1200x630.jpg">
+<meta property="og:image" content="https://mindshawk.github.io/chrisguerrero/kit/img/og_cat_1200x630.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="No One Wants To Live In Burbank: neon yellow title box, a cat looking up, Chris Guerrero, AFF 2026 Official Selection laurel">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="No One Wants To Live In Burbank · Chris Guerrero">
 <meta name="twitter:description" content="World Premiere, Austin Film Festival 2026. Tap to get the screener + deck.">
-<meta name="twitter:image" content="https://mindshawk.github.io/chrisguerrero/assets/og-1200x630.jpg">
+<meta name="twitter:image" content="https://mindshawk.github.io/chrisguerrero/kit/img/og_cat_1200x630.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315110F'/%3E%3Crect x='5' y='11' width='22' height='10' fill='none' stroke='%23FFE600' stroke-width='2.5'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#15110F">
 <meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="kit/kit.css">
 <style>
-@font-face{font-family:"Anton";src:url("assets/fonts/anton.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Oswald";src:url("assets/fonts/oswald-500.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Space Mono";src:url("assets/fonts/spacemono-400.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Space Mono";src:url("assets/fonts/spacemono-700.woff2") format("woff2");font-weight:700;font-display:swap}
-:root{
-  --bg:#15110F;--deep:#0F0C0B;--raised:#2A211A;--line:#4A423A;
-  --bone:#F2EDE4;--bone2:#D7CDBC;--mute:#8A8175;--mute2:#ABA192;
-  --rust:#A1502F;--sodium:#A9762F;--oxblood:#5E2024;--maroon:#3F171B;--brick:#87382F;--navy:#1E3047;--steel:#2C4256;--teal:#29423F;
-  --amber:#D4A04F;--amberfill:#C98F3C;
-  --neon:#FFE600;--neon2:#F2D21F;
-  --hi:var(--neon);--cta1:#FFE600;--cta2:#F2D21F;--ctatx:#15110F;--ring:#FFE600;--glowc:255,214,0;
-  --field-line:#8F8374;
-  --display:"Anton",Impact,"Haettenschweiler","Arial Narrow Bold","Liberation Sans Narrow",sans-serif;
-  --oswald:"Oswald","Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;
-  --mono:"Space Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-  --r-s:6px;--r-m:12px;--r-l:16px;
-  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .95 0 0 0 0 .9 0 0 0 0 .8 0 0 0 .065 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
-  --stripe:linear-gradient(90deg,var(--oxblood) 0 11.11%,var(--maroon) 0 22.22%,var(--brick) 0 33.33%,var(--rust) 0 44.44%,var(--navy) 0 55.55%,var(--steel) 0 66.66%,var(--teal) 0 77.77%,var(--sodium) 0 88.88%,var(--bone2) 0);
-}
-.t-haley{--hi:#7FA3C7;--cta1:#8FB1D3;--cta2:#7FA3C7;--ctatx:#0F0C0B;--ring:#9CBCDB;--glowc:127,163,199;--amber:#8FB1D3;--amberfill:#7FA3C7}
-*{box-sizing:border-box;margin:0}
-html{-webkit-text-size-adjust:100%;overflow-x:clip;background:var(--bg);scroll-padding-bottom:90px}
-body{background:radial-gradient(120% 34% at 50% 0,#2A1A12 0,transparent 70%),var(--bg);color:var(--bone);font:16px/1.5 var(--sans);max-width:480px;margin:0 auto;padding-bottom:calc(96px + env(safe-area-inset-bottom));overflow-x:clip;counter-reset:sec}
-body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;background:var(--grain)}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--ring);outline-offset:3px;border-radius:4px}
-.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.stripe{height:6px;background:var(--stripe)}
-.lb{font:400 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
-section.n .lb::before{counter-increment:sec;content:counter(sec,decimal-leading-zero) " / "}
-section{padding:36px 16px 0}
-h2{font:400 30px/1.02 var(--display);text-transform:uppercase;letter-spacing:.015em;color:var(--bone);margin-top:6px}
-.kick{font:italic 16px/1.35 var(--serif);color:var(--bone2);margin:6px 0 14px}
-
-/* in-app banner (Instagram only) */
-#iab{display:none;align-items:center;gap:8px;background:var(--neon2);color:var(--ctatx);padding:8px 8px 8px 16px;font-weight:700;font-size:14px;line-height:1.3}
+html{scroll-behavior:smooth}
+body{overflow-x:clip}
+p{margin:0 0 12px}
+.skip{position:absolute;left:-999px;top:8px;z-index:99;background:var(--neon);color:var(--ink);padding:12px 16px;font-weight:700}
+.skip:focus{left:8px}
+#iab{display:none;align-items:center;gap:8px;background:var(--neon);color:var(--ink);padding:6px 6px 6px 16px;font-weight:700;font-size:14px;line-height:1.3;position:relative;z-index:60}
 #iab.on{display:flex}
 #iab span{flex:1}
-#iab button{min-width:48px;min-height:48px;border:0;background:transparent;color:var(--ctatx);font:700 22px/1 var(--sans);cursor:pointer}
+#iab button{min-width:48px;min-height:48px;border:0;background:transparent;color:var(--ink);font:700 24px/1 var(--body);cursor:pointer}
+.card{position:relative;overflow:hidden;padding:56px 16px 64px;border-top:6px solid var(--deep)}
+.in-w{position:relative;max-width:1180px;margin:0 auto;z-index:1}
+.credit{display:block;font:500 15px/1 var(--label);letter-spacing:.3em;text-transform:uppercase;color:var(--paper);margin-bottom:10px;text-shadow:2px 2px 0 var(--deep)}
+.card h2{font:400 clamp(52px,14vw,120px)/.9 var(--title);text-transform:uppercase;margin:0 0 22px;color:var(--paper);text-shadow:.04em .04em 0 var(--deep)}
+.card h2 em{font-style:normal;color:var(--sodium)}
+.card h2.sm{font-size:clamp(40px,10.5vw,84px)}
+.kick{display:inline-block;margin:0 0 24px;font:500 18px/1.2 var(--label);letter-spacing:.12em;text-transform:uppercase;background:var(--deep);color:var(--paper);padding:8px 14px 6px;transform:rotate(-1deg)}
+.panel{background:var(--paper);color:var(--ink);padding:30px 22px 34px;position:relative}
+.panel--ink{background:var(--deep);color:var(--paper)}
+.panel p{margin:0 0 14px}
+.btn{justify-content:center;text-align:center}
+.mark{z-index:2}
 
-/* hero */
-.hero{position:relative;aspect-ratio:900/605;overflow:hidden}
-.hero img{display:block;width:100%;height:100%;object-fit:cover;-webkit-mask-image:linear-gradient(#000 64%,transparent);mask-image:linear-gradient(#000 64%,transparent)}
-.hero.portrait img{object-position:50% 18%}
-.id{position:relative;z-index:2;margin-top:-30px;padding:0 16px 14px;animation:up .32s ease-out both}
-.id h1{font:400 34px/1 var(--display);text-transform:uppercase;letter-spacing:.012em;color:var(--bone)}
-.id .role{font:500 15px/1.3 var(--oswald);letter-spacing:.09em;text-transform:uppercase;color:var(--bone2);margin-top:5px}
-.id .tag{display:inline-block;margin-top:9px;background:var(--bone2);color:var(--bg);font:700 11px/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;transform:rotate(-1.2deg);clip-path:polygon(0 8%,3% 0,100% 5%,98% 100%,0 94%)}
-@keyframes up{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* HERO: C's look, Chris's polaroid as the main piece */
+.hero{padding-top:36px;padding-bottom:64px;border-top:0}
+.hero-grid{display:grid;gap:22px;grid-template-areas:"plank" "stage" "id"}
+.plank{grid-area:plank;position:relative;--rot:-1.2deg;transform:rotate(var(--rot));filter:drop-shadow(3px 8px 7px rgba(0,0,0,.55));margin-top:14px}
+.plank .paper{padding:36px 14px 30px;background:var(--red) repeating-linear-gradient(0deg,rgba(0,0,0,.09) 0 2px,transparent 2px 5px)}
+.plank img{width:100%;height:auto;filter:drop-shadow(2px 3px 0 rgba(10,7,6,.55))}
+.plank .label-tape{position:absolute;left:12px;top:-16px;z-index:3;--rot:-2deg;font-size:13px}
+.stage{grid-area:stage;position:relative;width:min(88%,430px);justify-self:center;margin:8px 0 26px}
+.stage .polaroid{--rot:-2.5deg;margin:0;padding:5.5% 5.5% 17%}
+.stage .polaroid img{aspect-ratio:1;object-fit:cover}
+.stage .polaroid figcaption{font-size:20px}
+.stage .pin{--pin:var(--red);top:-8px}
+.stage .tape{left:-9%}
+.stage .tape--r{left:auto;right:-9%}
+.catcut{position:absolute;right:-12%;bottom:-8%;width:42%;--rot:5deg;transform:rotate(var(--rot));z-index:4}
+.catcut img{width:100%;height:auto;filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(5px 8px 0 rgba(10,7,6,.5))}
+.catcut .mark{--w:62px;--c:var(--brick);--sw:8;left:-34%;top:6%}
+.idb{grid-area:id;position:relative}
+.idb h1{font:400 clamp(60px,18vw,150px)/.88 var(--title);text-transform:uppercase;margin:0 0 14px;text-shadow:.045em .045em 0 var(--deep)}
+.idb .strip{font-size:22px;--rot:-1.5deg;background:var(--sodium)}
+.idb .prem{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px}
+.laur{--rot:2.5deg;transform:rotate(var(--rot));filter:drop-shadow(2px 5px 4px rgba(0,0,0,.5));width:118px;flex:none}
+.laur .paper{background:var(--deep);padding:14px 8px 10px;color:inherit}
+.laur img{width:100%;height:auto}
+.prem .tp{display:grid;gap:10px;justify-items:start}
+.prem .label-tape{font-size:13px;line-height:1.25}
+@media(min-width:900px){
+ .hero{padding-top:56px;padding-bottom:90px}
+ .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-areas:"stage plank" "stage id";align-content:center;column-gap:56px;row-gap:30px}
+ .stage{width:min(100%,520px);margin:20px 0 30px}
+ .idb h1{font-size:clamp(90px,9.5vw,150px)}
+ .laur{width:150px}
+}
 
-/* CTA block */
-.cta{padding:14px 16px 6px}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.fields label{display:block;font:700 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--bone2);margin:0 2px 5px}
-.fields input{width:100%;height:48px;border-radius:var(--r-m);border:1.5px solid var(--field-line);background:var(--deep);color:var(--bone);padding:0 12px;font:16px var(--sans);min-width:0}
-.fields input::placeholder{color:#A39989}
-.fields input:focus{border-color:var(--ring);outline:none;box-shadow:0 0 0 3px rgba(var(--glowc),.3)}
-.opt{font-size:13px;color:var(--mute2);margin:7px 2px 11px}
-.big{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:72px;padding:10px 14px;border-radius:var(--r-l);background:linear-gradient(180deg,var(--cta1),var(--cta2));color:var(--ctatx);font:400 25px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;text-align:center;box-shadow:0 0 0 1px rgba(255,255,255,.45) inset,0 8px 28px rgba(var(--glowc),.32),0 0 52px rgba(var(--glowc),.16)}
-.big svg{width:26px;height:26px;flex:none}
-.big:active{transform:scale(.985)}
-.big.alt{min-height:60px;font-size:21px;background:var(--amberfill);box-shadow:none}
-.micro{font-size:14px;color:var(--bone2);text-align:center;margin:10px 0 8px}
-.fb{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.btn{display:flex;align-items:center;justify-content:center;min-height:48px;padding:6px 10px;border-radius:var(--r-m);border:1.5px solid var(--line);background:transparent;color:var(--bone);font:700 14px/1.2 var(--sans);text-align:center;cursor:pointer}
-.btn.fill{background:var(--amberfill);border-color:var(--amberfill);color:var(--bg)}
-.btn:active{background:var(--raised)}
-.btn.fill:active{background:var(--amber)}
+/* sections */
+.panel .strip{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.chips span{font:500 17px/1 var(--label);letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:8px 12px 6px}
 
-/* tiles */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;list-style:none;padding:0}
-.grid li{min-width:0}
-.tile{display:flex;align-items:center;gap:8px;min-height:68px;height:100%;padding:9px 8px 9px 11px;border-radius:var(--r-m);background:var(--raised);border:1.5px solid var(--line);position:relative;overflow:hidden}
-.tile::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--tc,var(--rust))}
-.tile svg{width:22px;height:22px;flex:none;color:var(--amber)}
-.tile b{display:block;font-size:clamp(14px,3.8vw,15px);line-height:1.15;font-weight:700;overflow-wrap:anywhere}
-@media (max-width:359px){.grid{grid-template-columns:1fr}}
-.tile span{min-width:0}
-.tile i{display:block;font-style:normal;font-size:12px;line-height:1.25;color:var(--mute2);margin-top:3px;overflow-wrap:anywhere}
-.tile.hot{background:var(--amberfill);border-color:var(--amberfill);color:var(--bg)}
-.tile.hot svg,.tile.hot i{color:var(--bg)}
-.tile.hot::after{background:var(--bg)}
-.tile:active{border-color:var(--amber)}
-.hint{display:none;font-size:13px;color:var(--mute2);margin-top:10px}
-.hint.on{display:block}
+/* email */
+.cta-grid{display:grid;gap:14px}
+@media(min-width:760px){.cta-grid{grid-template-columns:1fr 1fr}}
+.cta-grid label{display:block;font:500 15px var(--label);letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.cta-grid input{width:100%;min-height:52px;font:400 16px var(--body);padding:10px 12px;border:3px solid var(--ink);background:#fff;color:var(--ink);border-radius:0}
+.opt{font-size:13px;margin:10px 0 0}
+.go{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:16px;min-height:68px;padding:12px 16px;text-decoration:none;background:var(--neon);color:var(--ink);font:400 clamp(26px,7vw,34px)/1 var(--title);text-transform:uppercase;letter-spacing:.03em;box-shadow:0 6px 0 var(--deep);text-align:center}
+.go svg{width:28px;height:28px;flex:none}
+.go:active{transform:translateY(3px);box-shadow:0 3px 0 var(--deep)}
+.panel .sub{font-size:14px;margin:24px 0 10px;font-weight:700}
+.lnks{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:6px}
+.lnks button{min-height:48px;background:none;border:0;border-bottom:2px dashed var(--ink);font:700 14px var(--body);color:var(--ink);cursor:pointer;padding:0;margin-top:8px}
 
-/* screenings */
-.note{margin:0 0 12px;padding:8px 12px;border-left:4px solid var(--rust);background:rgba(161,80,47,.16);font-size:14px;color:var(--bone)}
-.card{background:var(--raised);border:1.5px solid var(--line);border-radius:var(--r-l);padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
-.card .tg{display:inline-block;background:var(--bone2);color:var(--bg);font:700 11px/1.25 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:3px}
-.card.next{border-color:var(--neon2);box-shadow:0 0 0 2px rgba(255,230,0,.16),0 0 26px rgba(255,214,0,.2)}
-.card.next .tg{background:var(--neon);color:var(--bg)}
-.card.past{opacity:.62}
-.when{font:400 32px/1.05 var(--display);color:var(--bone);margin:11px 0 5px;letter-spacing:.01em}
-.card.next .when{color:var(--neon)}
-.card.past .when{color:var(--mute2)}
-.venue{font-size:15px;color:var(--bone2)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
-#missed{display:none;margin-bottom:12px;padding:14px;border:1.5px dashed var(--neon2);border-radius:var(--r-m);font-weight:700}
+/* quick actions */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px 12px;list-style:none;margin:0;padding:0}
+@media(min-width:960px){.tiles{grid-template-columns:repeat(4,1fr);gap:20px 16px}}
+.btn.tile{justify-content:flex-start;text-align:left;min-height:84px;padding:12px;align-items:flex-start;width:100%;height:100%}
+.tiles li{display:flex}
+.tile b{display:block;font:500 17px/1.1 var(--label);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.hint{margin:26px 0 40px;font-size:14px;font-weight:700;background:var(--deep);display:inline-block;padding:10px 14px;transform:rotate(.6deg)}
+
+/* trailer */
+.trailerbox{max-width:900px;margin:0 auto;border:8px solid var(--paper);box-shadow:8px 10px 0 var(--deep);transform:rotate(-1deg)}
+.vlink{display:inline-flex;align-items:center;min-height:48px;margin-top:18px;font:700 14px var(--body);color:var(--paper);background:var(--deep);padding:0 16px;text-decoration:none}
+
+/* tickets in a colour card */
+.tickets{display:grid;gap:34px}
+@media(min-width:820px){.tickets{grid-template-columns:1fr 1fr;gap:44px}}
+.ticket{--stub:150px;position:relative;filter:drop-shadow(5px 9px 6px rgba(0,0,0,.55));transform:rotate(var(--rot))}
+.ticket.slam{transform:scale(1.25) rotate(calc(var(--rot) + 6deg))}
+.ticket.slam.in{transform:rotate(var(--rot))}
+.ticket .tk{background:var(--paper);color:var(--ink);
+ -webkit-mask:radial-gradient(circle 11px at 0 calc(100% - var(--stub)),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% calc(100% - var(--stub)),#0000 98%,#000) right/51% 100% no-repeat;
+ mask:radial-gradient(circle 11px at 0 calc(100% - var(--stub)),#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% calc(100% - var(--stub)),#0000 98%,#000) right/51% 100% no-repeat}
+.ticket--b .tk{background:var(--paper2)}
+.tk-main{padding:18px 18px 16px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:end}
+.tk-kind{grid-column:1/-1;justify-self:start;margin-bottom:6px}
+.tk-day,.tk-time{font:400 clamp(36px,10vw,46px)/.95 var(--title);text-transform:uppercase;margin:0}
+.tk-time{color:var(--red)}
+.tk-where{grid-column:1/-1;font-size:13px;line-height:1.5;margin:8px 0 0}
+.tk-stub{min-height:var(--stub);padding:14px;border-top:3px dashed rgba(21,17,15,.55);display:grid;grid-template-columns:1fr 1fr;gap:8px;align-content:center}
+.tk-stub a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:var(--tap);padding:6px 8px;background:var(--ink);color:var(--paper);text-decoration:none;font:500 14px/1.15 var(--label);letter-spacing:.1em;text-transform:uppercase}
+.tk-stub a.g{background:var(--red)}
+.tk-stub a:active{transform:translateY(2px)}
+.ticket.past{opacity:.7}
+.ticket.next{filter:drop-shadow(0 0 0 var(--neon)) drop-shadow(5px 9px 6px rgba(0,0,0,.55))}
+#missed{display:none;margin:0 0 20px;padding:12px 14px;background:var(--deep);font-weight:700;font-size:14px}
 #missed.on{display:block}
 
-/* picture frames */
-.frame{position:relative;padding:9px 9px 8px;background:repeating-linear-gradient(93deg,rgba(255,255,255,.04) 0 1px,transparent 1px 4px),linear-gradient(145deg,#4B3E32,#2A211A 52%,#3A2E24);border-radius:3px;box-shadow:0 0 0 1px var(--deep),inset 0 0 0 1px rgba(242,237,228,.13),inset 0 0 12px rgba(0,0,0,.55),0 10px 22px rgba(0,0,0,.55)}
-.frame img{display:block;width:100%;height:auto;box-shadow:0 0 0 2px var(--deep),0 0 0 3px rgba(215,205,188,.28),inset 0 0 0 1px rgba(0,0,0,.4)}
-.frame figcaption{font:400 10.5px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--bone2);padding:9px 2px 3px;display:flex;flex-wrap:wrap;justify-content:space-between;overflow-wrap:anywhere;text-align:center}
+/* countdown */
+.cd{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"l h" "l p" "b b";gap:6px 20px;align-items:center}
+.cd .lock{grid-area:l;width:64px;height:72px}
+.cd h3{grid-area:h;font:400 clamp(30px,8vw,52px)/.95 var(--title);text-transform:uppercase;margin:0}
+.cd p{grid-area:p;margin:0}
+.cd .btn{grid-area:b;margin-top:10px;max-width:340px}
+@media(min-width:760px){.cd{grid-template-columns:auto 1fr auto;grid-template-areas:"l h b" "l p b"}.cd .btn{margin:0}}
 
 /* film */
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.chips span{border:1.5px solid var(--neon2);color:var(--neon2);border-radius:99px;padding:3px 11px;font:700 11px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase}
-.log{font:italic 20px/1.35 var(--serif);color:var(--bone);margin-bottom:6px}
-.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:14px -16px 0;padding:6px 16px 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.gal::-webkit-scrollbar{display:none}
-.gal figure{flex:0 0 78%;scroll-snap-align:center;margin:0}
-.gal figure:nth-child(odd){transform:rotate(-.7deg)}
-.gal figure:nth-child(even){transform:rotate(.6deg)}
-.swipe{font:400 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute2);text-align:right;margin-top:-2px}
-.cr{margin:8px 0 0;border-top:1px solid var(--line)}
-.cr div{display:grid;grid-template-columns:minmax(0,118px) minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
-.cr dt,.cr dd{min-width:0;overflow-wrap:anywhere}
-.cr dt{font:400 10.5px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
-.cr dd{margin:0;font-size:15px;color:var(--bone2)}
-.laurel{display:flex;align-items:center;gap:14px;margin-top:18px}
-.laurel img{width:112px;height:auto;flex:none}
-.laurel p{font:500 15px/1.3 var(--oswald);letter-spacing:.06em;text-transform:uppercase;color:var(--bone2)}
+.log{font:400 clamp(22px,5.5vw,32px)/1.2 var(--title);margin:0 0 18px;letter-spacing:.01em}
+.credits{margin:18px 0 0;padding:0;list-style:none;font-size:14px}
+.credits li{padding:9px 0;border-top:2px dashed rgba(21,17,15,.4)}
+.credits b{font:500 14px var(--label);letter-spacing:.14em;text-transform:uppercase;display:block;color:#7a2a20}
+.filmtop{display:grid;gap:24px}
+@media(min-width:900px){.filmtop{grid-template-columns:1.25fr 1fr;align-items:start}}
+.stills{display:grid;grid-template-columns:1fr 1fr;gap:26px 18px;margin-top:44px}
+@media(min-width:760px){.stills{grid-template-columns:repeat(4,1fr);gap:34px 22px}}
+.stills .polaroid{padding:6% 6% 8%;margin:0}
+.stills .polaroid img{aspect-ratio:4/3;height:auto}
+.stills .polaroid:nth-child(4n+2){margin-top:18px}
+.stills .polaroid:nth-child(4n+4){margin-top:10px}
+.lauwrap{margin-top:30px;display:flex;gap:14px;align-items:center}
+.lauwrap p{margin:0;font:500 16px/1.3 var(--label);letter-spacing:.12em;text-transform:uppercase;background:var(--deep);padding:10px 14px}
 
-/* about with still backdrop */
-.bd{position:relative;isolation:isolate;overflow:hidden;margin-top:40px;padding:36px 16px 34px}
-.bd>picture{position:absolute;inset:0;z-index:-2}
-.bd>picture img{width:100%;height:100%;object-fit:cover;display:block}
-.bd::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg),rgba(21,17,15,.5) 24%,rgba(21,17,15,.62) 76%,var(--bg))}
-.about{display:grid;grid-template-columns:128px 1fr;gap:16px;align-items:start;margin-top:14px}
-.about .frame{transform:rotate(-2deg)}
-.about .frame figcaption{justify-content:center}
-.bio p{font-size:16px;color:var(--bone);margin-bottom:11px}
-.bio p.lead{font:italic 18px/1.35 var(--serif)}
-.bio.wide{margin-top:16px}
-.bio.wide p:last-child{margin-bottom:0}
+/* about */
+.about{display:grid;gap:26px}
+@media(min-width:900px){.about{grid-template-columns:1fr 1fr 1fr;align-items:start}}
+.about .panel p{font-size:15px}
+.chrispol{max-width:260px;justify-self:center;width:100%}
+.chrispol .polaroid{--rot:3deg;margin:0;padding:6% 6% 16%}
+.chrispol img{aspect-ratio:3/4;object-fit:cover;object-position:top}
 
-/* feature tease */
-.tease h2{font-size:24px;color:var(--amber)}
-.tease .tl{font:400 40px/1 var(--display);text-transform:uppercase;color:var(--bone);margin:14px 0 8px;letter-spacing:.01em}
-.tease .tz{font:italic 18px/1.35 var(--serif);color:var(--bone);margin-bottom:12px}
-.tease p.lg{font-size:16px;color:var(--bone2);margin-bottom:16px}
-
-/* clients/studio (Haley) */
-.pills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin-top:12px}
-.pills li{border:1.5px solid var(--line);border-radius:99px;padding:5px 13px;font:700 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--bone2)}
+/* dev */
+.dev .tag{font:400 clamp(30px,8vw,52px)/1 var(--title);text-transform:uppercase;color:var(--red);margin:0 0 10px}
+.dev .trip{font:500 17px/1.3 var(--label);letter-spacing:.1em;text-transform:uppercase;margin:0 0 16px}
+.dev .btn{margin-top:16px;max-width:420px}
 
 /* links */
-.links{list-style:none;padding:0;border-top:1.5px solid var(--line);margin-top:12px}
-.links a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:52px;padding:6px 2px;border-bottom:1.5px solid var(--line);font-weight:700}
-.links small{color:var(--amber);font:400 12px/1.3 var(--mono);letter-spacing:.04em;text-align:right;overflow-wrap:anywhere}
+.all{list-style:none;margin:0;padding:0;display:grid;gap:0 48px}
+@media(min-width:900px){.all{grid-template-columns:1fr 1fr}}
+.all li{border-top:2px dashed rgba(239,235,229,.4)}
+.all a{display:flex;justify-content:space-between;gap:14px;min-height:52px;align-items:center;text-decoration:none;padding:6px 0;font-size:14px}
+.all a b{font:500 17px var(--label);letter-spacing:.1em;text-transform:uppercase}
+.all a small{text-align:right;font-size:13px;opacity:.85;overflow-wrap:anywhere}
 
 /* footer */
-footer{margin:40px 0 0}
-footer .in{padding:24px 16px 0}
-.also{display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:64px;padding:11px 14px;background:var(--bone2);color:var(--bg);border-radius:var(--r-m);font-weight:800;text-align:center}
-.also small{font-weight:600;font-size:13px}
-footer .row{margin-top:12px}
-footer p.sig{margin-top:18px;font:400 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute2);text-align:center}
+footer.card{padding-bottom:110px}
+footer .row{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+footer .row .btn{flex:1 1 150px}
+footer a.hal{color:var(--ink);font-weight:700;display:block;padding:8px 0;min-height:48px}
+footer .hal small{display:block}
 
-/* sticky CTA */
-#stick{position:fixed;left:0;right:0;bottom:0;z-index:30;max-width:480px;margin:0 auto;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(21,17,15,0),rgba(21,17,15,.96) 40%);transform:translateY(120%);transition:transform .25s}
+#stick{position:fixed;left:0;right:0;bottom:0;z-index:30;max-width:520px;margin:0 auto;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(21,17,15,0),rgba(21,17,15,.96) 40%);transform:translateY(120%);transition:transform .25s}
 #stick.on{transform:none}
-#stick .big{min-height:58px;font-size:23px}
-.toast{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--bone2);color:var(--bg);padding:10px 16px;border-radius:99px;font-weight:800;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;white-space:nowrap}
+#stick .go{margin-top:0;min-height:58px;font-size:24px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--neon);color:var(--ink);padding:12px 18px;font:700 14px var(--body);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s;white-space:nowrap}
 .toast.on{opacity:1}
-/* very narrow viewports (320px phones at 200% zoom): stack two-column rows so nothing clips */
-@media (max-width:300px){.fields,.fb,.row,.about,.cr div{grid-template-columns:minmax(0,1fr)}.about .frame{max-width:160px}h1,h2,.when,.tease .tl{overflow-wrap:anywhere}.big{font-size:21px}.laurel{flex-wrap:wrap}.lb,.tile span,.laurel p{overflow-wrap:anywhere}.tile{padding-left:8px}.tile svg{display:none}.links a{flex-wrap:wrap;overflow-wrap:anywhere}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(min-width:900px){
+ .card{padding:96px 40px 110px}
+ .hero{padding-top:56px;padding-bottom:90px}
+ .panel{padding:40px 38px 44px}
+ #stick{display:none}
+ footer.card{padding-bottom:90px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#stick{transition:none}.ticket.slam,.ticket.slam.in{transform:rotate(var(--rot))}.slam.in{transition:none}}
 </style>
-</head>
+<style>/* Sticky action bar (Chris, round 7): Trailer / Email me / Save contact, always one thumb away on phones. */
+#stick{display:none!important}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(10,7,6,.94);box-shadow:0 -6px 14px rgba(0,0,0,.5)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:56px;text-decoration:none;font:500 13px/1.1 var(--label);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--paper)}
+.bar a:nth-child(1){background:var(--neon)}.bar a:nth-child(2){background:var(--brick);color:var(--paper)}
+.bar b{font:400 20px/1 var(--title)}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+@media (min-width:900px){.bar{display:none}body{padding-bottom:0}}
+</style>
+<style>/* Round 8 hero (Chris): compact, big headshot beside the name, three thin action strips.
+   The sticky bar only slides up once those strips have scrolled away. */
+.hero4 .in-w{display:block}
+.hero4 .plank{max-width:340px;margin:4px auto 4px;position:relative}
+.hero4 .plank .paper{padding:12px 12px 10px;overflow:hidden}
+.hero4 .plank img{margin:-9% 0 -7%}
+.hero4 .plank .label-tape{font-size:12px}
+.h4row{display:grid;grid-template-columns:60% 1fr;gap:10px;align-items:center;margin-top:12px}
+.h4shot{position:relative}
+.h4shot .polaroid{--rot:-3deg;padding:5% 5% 13%;width:100%!important;max-width:none!important;margin:0!important}
+.h4shot .catcut{position:absolute;right:-16%;bottom:-10%;width:42%;transform:rotate(4deg)}
+.h4shot .catcut img{filter:drop-shadow(4px 8px 8px rgba(0,0,0,.6))}
+.h4shot .catcut [data-mark]{position:absolute;--w:60%;left:12%;top:28%;--c:var(--brick);--sw:9}
+.h4id{display:grid;gap:7px;justify-items:start;min-width:0}.h4id h1 span{display:block;white-space:nowrap}
+@media (min-width:900px){.h4id h1 span{display:inline}}
+.h4id h1{font:400 clamp(30px,9.2vw,84px)/.9 var(--title);min-width:0;text-transform:uppercase;margin:0;text-shadow:.05em .05em 0 var(--deep)}
+.h4id .strip{font-size:12px}.h4id .label-tape{font-size:11px}
+@media (max-width:374px){.h4id .strip{font-size:10.5px;padding:5px 9px 3px}.h4id .label-tape{font-size:9.5px;padding:6px 8px 5px;letter-spacing:.04em}.hero4 [data-mark=burst]{display:none}}
+.qa{display:grid;gap:8px;margin-top:20px}
+.qa .btn{justify-content:center;min-height:48px;padding:10px 14px;font-size:15px}
+.qa .btn:nth-child(1){--rot:-.8deg}.qa .btn:nth-child(2){--rot:.6deg}.qa .btn:nth-child(3){--rot:-.4deg}
+@media (min-width:900px){.h4row{grid-template-columns:420px 1fr;gap:40px}.hero4 .plank{max-width:520px}.qa{grid-template-columns:repeat(3,1fr);max-width:900px;margin:22px auto 0}}
+.bar{transform:translateY(110%);transition:transform .25s ease}
+.bar.show{transform:none}
+@media (prefers-reduced-motion:reduce){.bar{transition:none}}
+</style>
+<style>/* Email capture right under the hero and visible on open (Chris, round 9): slimmer top on phones. */
+@media (max-width:720px){#email{padding-top:18px!important}#email h2{font-size:clamp(34px,10vw,56px)!important;margin:2px 0 10px!important}.hero4{padding-bottom:12px!important}.hero4 .qa{margin-top:14px}}</style>
+<style>.hero4 .qa{grid-template-columns:1fr 1fr;gap:8px}.hero4 .qa .btn{font-size:14px;padding:10px 8px}@media (min-width:900px){.hero4 .qa{grid-template-columns:1fr 1fr;max-width:620px}}</style></head>
 <body class="t-chris">
 <div id="iab" role="region" aria-label="Browser tip"><span id="iabt">Tap ••• then Open in Safari for one-tap calendar + contact.</span><button type="button" id="iabx" aria-label="Dismiss tip">×</button></div>
-<header>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#email">Skip to email</a>
 
-  <div class="hero ">
-    <picture>
-      <source srcset="assets/hero-900.avif" type="image/avif">
-      <source srcset="assets/hero-900.webp" type="image/webp">
-      <img src="assets/hero-900.jpg" width="900" height="605" fetchpriority="high" alt="Poster for No One Wants To Live In Burbank: the neon yellow title box over Pumpkin the cat looking up, with the Austin Film Festival 2026 Official Selection laurel.">
-    </picture>
+<!-- 1 HERO -->
+<header class="card wash wash--ink hero hero4">
+  <span data-mark="star" style="--w:64px;top:1%;right:3%;--c:var(--sodium)"></span>
+  <span data-mark="burst" style="--w:86px;top:44%;right:-18px;--c:var(--rust);--sw:5"></span>
+  <div class="in-w">
+   <div class="plank">
+    <span class="label-tape">A NEW COMEDY FROM</span>
+    <div class="paper torn"><img src="kit/img/title.webp" width="720" height="314" fetchpriority="high" alt="No One Wants To Live In Burbank"></div>
+    <i class="tape"></i><i class="tape tape--r"></i>
+   </div>
+   <div class="h4row">
+    <div class="h4shot">
+     <figure class="polaroid"><i class="pin"></i><img src="kit/img/chris_sq.webp" width="720" height="720" fetchpriority="high" alt="Chris Guerrero, director"></figure>
+     <div class="catcut"><img src="kit/img/cat.webp" width="720" height="970" alt="Pumpkin the cat, looking up"><span data-mark="heartTorn"></span></div>
+    </div>
+    <div class="h4id">
+     <h1><span>Chris</span> <span>Guerrero</span></h1>
+     <span class="strip">Director. Writer. Producer.</span>
+     <span class="label-tape label-tape--red">World Premiere</span>
+     <span class="label-tape">Austin Film Festival 2026</span>
+    </div>
+   </div>
+   <nav class="qa" id="heroActions" aria-label="Quick actions">
+    <a class="btn btn--neon" href="#trailer" data-track="hero-trailer">&#9654;&#xFE0E; Watch the trailer</a>
+    <a class="btn" href="https://mindshawk.github.io/chrisguerrero/chris.vcf" data-track="hero-vcard">Save my contact</a>
+   </nav>
   </div>
-
-  <div class="id">
-    <h1>Chris Guerrero</h1>
-    <p class="role">Director. Writer. Producer.</p>
-    <p class="tag">World Premiere · Austin Film Festival 2026</p>
-  </div>
-</header>
+ </header>
 
 <main>
-<div class="stripe" aria-hidden="true"></div>
-<div class="cta" id="cta" role="group" aria-labelledby="go">
-
-  <div class="fields">
+<!-- 2 EMAIL -->
+<section class="card wash wash--sodium" id="email" aria-labelledby="h-cta">
+ <span data-mark="star" style="--w:70px;top:4px;right:6%;--c:var(--red)"></span>
+ <span data-mark="zigzag" style="--w:200px;bottom:2%;right:-20px;--c:var(--navy);--sw:6"></span>
+ <div class="in-w">
+  <span class="credit" style="color:var(--ink);text-shadow:none">Say hello</span>
+  <h2 class="slam" id="h-cta" style="color:var(--paper)">Get the <em style="color:var(--neon)">screener</em> + deck</h2>
+  <div class="panel torn" id="cta" style="--rot:.6deg;transform:rotate(.6deg)" role="group" aria-labelledby="go">
+   <div class="cta-grid">
     <div><label for="nm">Your name</label><input id="nm" name="nm" type="text" maxlength="60" placeholder="I like names" autocomplete="name" enterkeyhint="next"></div>
     <div><label for="rl">What do you do?</label><input id="rl" name="rl" type="text" maxlength="80" placeholder="No wrong answer" autocomplete="organization-title" enterkeyhint="done"></div>
-  </div>
-  <p class="opt" id="opt">Both optional. Skip them and just tap.</p>
-  <a class="big" id="go" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" aria-describedby="micro" data-track="mail">
+   </div>
+   <p class="opt" id="opt">Both optional. Skip them and just tap.</p>
+   <a class="go" id="go" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" aria-describedby="micro" data-track="mail">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 7 9-7"/></svg>
     <span>Get the screener + deck</span>
-  </a>
-  <p class="micro" id="micro">Opens your email. Hit send and the screener comes right back.</p>
-  <div class="fb"><button class="btn" type="button" id="cpE" data-track="copy-email">Copy email address</button><button class="btn" type="button" id="cpM" data-track="copy-message">No mail app? Copy the message</button></div>
-</div>
+   </a>
+   <p class="sub micro" id="micro">Opens your email. Hit send and the screener comes right back.</p>
+   <div class="lnks"><button type="button" id="cpE" data-track="copy-email">Copy email address</button><button type="button" id="cpM" data-track="copy-message">No mail app? Copy the message</button></div>
+  </div>
+ </div>
+</section>
 
-<section class="n" aria-labelledby="h-act">
-  <p class="lb" aria-hidden="true">Quick actions</p>
-  <h2 id="h-act">One tap, anything</h2>
+<section class="card wash wash--red" id="trailer" aria-labelledby="h-trailer">
+ <span data-mark="burst" style="--w:110px;bottom:2%;right:2%;--c:var(--sodium)"></span>
+ <span data-mark="arrow" style="--w:130px;top:3%;right:3%;--c:var(--paper);--sw:6;transform:rotate(-70deg)"></span>
+ <div class="in-w">
+  <h2 class="slam" id="h-trailer">The <em>trailer</em></h2>
+  <div class="trailerbox"><div class="trailer" data-vimeo="1240109489" data-vimeo-v="1240110002" data-poster-v="kit/img/trailer_poster_cat_v.webp"><img src="kit/img/trailer_poster_cat.webp" width="1280" height="720" loading="lazy" alt="Trailer still: Pumpkin the cat with a cracked marker heart and cartoon tears"><button type="button" aria-label="Play the trailer"><span>&#9654;&#xFE0E; Play trailer</span></button></div></div>
+  <a class="vlink" href="https://vimeo.com/1240109489">Watch on Vimeo</a>
+ </div>
+</section>
+
+<!-- 3 QUICK ACTIONS -->
+<section class="card wash wash--navy" id="quick" aria-labelledby="h-act">
+ <span data-mark="burst" style="--w:90px;top:0;right:4%;--c:var(--neon);--sw:5"></span>
+ <span data-mark="star" style="--w:60px;bottom:1%;right:4%;--c:var(--sodium)"></span>
+ <div class="in-w">
+  <span class="credit" aria-hidden="true">Quick actions</span>
+  <h2 class="slam" id="h-act">One tap, <em>anything</em></h2>
   <p class="kick">Eight buttons. No scavenger hunt.</p>
-  <ul class="grid">
-
-    <li><a class="tile hot" href="https://mindshawk.github.io/chrisguerrero/chris.vcf" style="--tc:#87382F" data-track="save-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="8" r="4"/><path d="M2 21c0-4 4-6 8-6s8 2 8 6M19 4v6M16 7h6"/></svg><span><b>Save my contact</b><i>So you never lose me</i></span></a></li>
-
-    <li><a class="tile" href="https://www.instagram.com/mindshawk/" style="--tc:#A1502F" data-track="instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span><b>Follow @mindshawk</b><i>Cat content and the occasional film</i></span></a></li>
-
-    <li><a class="tile" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-all.ics" style="--tc:#A9762F" data-track="calendar-all"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><b>Add screenings to calendar</b><i>Both of them. Be early.</i></span></a></li>
-
-    <li><a class="tile" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail style="--tc:#55789C" data-track="mail-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg><span><b>Pitch deck</b><i>Comes with the screener</i></span></a></li>
-
-    <li><a class="tile" href="https://vimeo.com/chrisguerrero" style="--tc:#3F6F69" data-track="vimeo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span><b>Vimeo</b><i>Other things I've directed</i></span></a></li>
-
-    <li><a class="tile" href="https://www.linkedin.com/in/christopherallenguerrero/" style="--tc:#8A3038" data-track="linkedin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3"/></svg><span><b>LinkedIn</b><i>The grown-up one</i></span></a></li>
-
-    <li><a class="tile" href="https://www.christopherguerrero.com" style="--tc:#C98F3C" data-track="website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span><b>Website</b><i>The whole portfolio</i></span></a></li>
-
-    <li><a class="tile" href="https://renderrush.digital.vistaprint.io/s/tx1yqgba07gidriq" style="--tc:#4C6E92" data-track="vistaprint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 10h6M6 14h9"/></svg><span><b>Digital card</b><i>Paper, but it never runs out</i></span></a></li>
-
+  <ul class="tiles">
+   <li><a class="btn tile btn--neon" href="https://mindshawk.github.io/chrisguerrero/chris.vcf" style="--rot:-1deg" data-track="save-contact"><span><b>Save my contact</b><small>So you never lose me</small></span></a></li>
+   <li><a class="btn tile" href="https://www.instagram.com/mindshawk/" style="--rot:.8deg" data-track="instagram"><span><b>Follow @mindshawk</b><small>Cat content and the occasional film</small></span></a></li>
+   <li><a class="btn tile" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-all.ics" style="--rot:-.6deg" data-track="calendar-all"><span><b>Add screenings to calendar</b><small>Both of them. Be early.</small></span></a></li>
+   <li><a class="btn tile" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail style="--rot:1deg" data-track="mail-tile"><span><b>Pitch deck</b><small>Comes with the screener</small></span></a></li>
+   <li><a class="btn tile" href="https://vimeo.com/chrisguerrero" style="--rot:.7deg" data-track="vimeo"><span><b>Vimeo</b><small>Other things I've directed</small></span></a></li>
+   <li><a class="btn tile" href="https://www.linkedin.com/in/christopherallenguerrero/" style="--rot:-1deg" data-track="linkedin"><span><b>LinkedIn</b><small>The grown-up one</small></span></a></li>
+   <li><a class="btn tile" href="https://www.christopherguerrero.com" style="--rot:.5deg" data-track="website"><span><b>Website</b><small>The whole portfolio</small></span></a></li>
+   <li><a class="btn tile" href="https://renderrush.digital.vistaprint.io/s/tx1yqgba07gidriq" style="--rot:-.8deg" data-track="vistaprint"><span><b>Digital card</b><small>Paper, but it never runs out</small></span></a></li>
   </ul>
   <p class="hint" id="hint">Contact or calendar not opening? Open this page in your phone's browser.</p>
+ </div>
 </section>
 
+<!-- 4 TRAILER -->
 
-<section class="n" id="screenings" aria-labelledby="h-scr">
-  <p class="lb" aria-hidden="true">Screenings</p>
-  <h2 id="h-scr">See it in Austin</h2>
+
+<!-- 5 SCREENINGS -->
+<section class="card wash wash--teal" id="screenings" aria-labelledby="h-scr">
+ <span data-mark="cross" style="--w:56px;top:6px;right:8%;--c:var(--neon);--sw:8"></span>
+ <span data-mark="triangle" style="--w:70px;top:2%;left:55%;--c:var(--sodium)"></span>
+ <div class="in-w">
+  <span class="credit" aria-hidden="true">Screenings</span>
+  <h2 class="slam" id="h-scr">See it in <em>Austin</em></h2>
   <p class="kick">Galaxy Theatre, Screen 5. Come say hi.</p>
-  <p class="note">Burbank screens 2nd of 7 in Shorts Program 9</p>
+  <p class="kick" style="background:var(--sodium);color:var(--ink);transform:rotate(.8deg)">Burbank screens 2nd of 7 in Shorts Program 9</p>
   <p id="missed">Missed it? Hit the button up top and the screener comes right back.</p>
-
-  <article class="card" id="s1" data-end="2026-10-30T22:05:00Z">
-    <span class="tg" data-label="World Premiere">World Premiere</span>
-    <h3 class="when">Fri Oct 30, 3:10pm</h3>
-    <p class="venue">Galaxy Theatre, Screen 5<br>6700 Middle Fiskville Rd, Austin, TX 78752<br>Shorts Program 9: Sense of Place</p>
-    <div class="row">
-      <a class="btn" href="https://maps.apple.com/?q=Galaxy+Theatre&amp;address=6700%20Middle%20Fiskville%20Rd%2C%20Austin%2C%20TX%2078752" data-track="map-apple">Apple Maps</a>
-      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Galaxy+Theatre+6700+Middle+Fiskville+Rd+Austin+TX+78752" data-track="map-google">Google Maps</a>
-      <a class="btn fill" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-1.ics" data-track="calendar-1">Add to Apple / Outlook</a>
-      <a class="btn fill" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=No+One+Wants+To+Live+In+Burbank+(AFF+World+Premiere)&amp;dates=20261030T201000Z/20261030T220500Z&amp;ctz=America/Chicago&amp;location=Galaxy+Theatre%2C+Screen+5%2C+6700+Middle+Fiskville+Rd%2C+Austin%2C+TX+78752&amp;details=Shorts+Program+9%3A+Sense+of+Place.+https%3A%2F%2Fmindshawk.github.io%2Fchrisguerrero%2F" data-track="gcal-1">Add to Google</a>
+  <div class="tickets">
+   <article class="ticket slam" id="s1" data-end="2026-10-30T22:05:00Z" style="--rot:-1.4deg">
+    <div class="tk">
+     <div class="tk-main">
+      <span class="label-tape label-tape--red tk-kind tg" data-label="World Premiere" style="--rot:-2deg">World Premiere</span>
+      <h3 class="tk-day">Fri Oct 30</h3><span class="tk-time when">3:10pm</span>
+      <p class="tk-where"><b>Galaxy Theatre, Screen 5</b><br>6700 Middle Fiskville Rd, Austin, TX 78752<br>Shorts Program 9: Sense of Place</p>
+     </div>
+     <div class="tk-stub">
+      <a href="https://maps.apple.com/?q=Galaxy+Theatre&amp;address=6700%20Middle%20Fiskville%20Rd%2C%20Austin%2C%20TX%2078752" data-track="map-apple">Apple Maps</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Galaxy+Theatre+6700+Middle+Fiskville+Rd+Austin+TX+78752" data-track="map-google">Google Maps</a>
+      <a class="g" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-1.ics" data-track="calendar-1">Add to Apple / Outlook</a>
+      <a class="g" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=No+One+Wants+To+Live+In+Burbank+(AFF+World+Premiere)&amp;dates=20261030T201000Z/20261030T220500Z&amp;ctz=America/Chicago&amp;location=Galaxy+Theatre%2C+Screen+5%2C+6700+Middle+Fiskville+Rd%2C+Austin%2C+TX+78752&amp;details=Shorts+Program+9%3A+Sense+of+Place.+https%3A%2F%2Fmindshawk.github.io%2Fchrisguerrero%2F" data-track="gcal-1">Add to Google</a>
+     </div>
     </div>
-  </article>
-
-  <article class="card" id="s2" data-end="2026-11-05T02:55:00Z">
-    <span class="tg" data-label="Second screening">Second screening</span>
-    <h3 class="when">Wed Nov 4, 7:00pm</h3>
-    <p class="venue">Galaxy Theatre, Screen 5<br>6700 Middle Fiskville Rd, Austin, TX 78752<br>Shorts Program 9: Sense of Place</p>
-    <div class="row">
-      <a class="btn" href="https://maps.apple.com/?q=Galaxy+Theatre&amp;address=6700%20Middle%20Fiskville%20Rd%2C%20Austin%2C%20TX%2078752" data-track="map-apple">Apple Maps</a>
-      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Galaxy+Theatre+6700+Middle+Fiskville+Rd+Austin+TX+78752" data-track="map-google">Google Maps</a>
-      <a class="btn fill" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-2.ics" data-track="calendar-2">Add to Apple / Outlook</a>
-      <a class="btn fill" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=No+One+Wants+To+Live+In+Burbank+(AFF+Second+Screening)&amp;dates=20261105T010000Z/20261105T025500Z&amp;ctz=America/Chicago&amp;location=Galaxy+Theatre%2C+Screen+5%2C+6700+Middle+Fiskville+Rd%2C+Austin%2C+TX+78752&amp;details=Shorts+Program+9%3A+Sense+of+Place.+https%3A%2F%2Fmindshawk.github.io%2Fchrisguerrero%2F" data-track="gcal-2">Add to Google</a>
+   </article>
+   <article class="ticket ticket--b slam" id="s2" data-end="2026-11-05T02:55:00Z" style="--rot:1.2deg">
+    <div class="tk">
+     <div class="tk-main">
+      <span class="label-tape tk-kind tg" data-label="Second screening" style="--rot:1.5deg">Second screening</span>
+      <h3 class="tk-day">Wed Nov 4</h3><span class="tk-time when">7:00pm</span>
+      <p class="tk-where"><b>Galaxy Theatre, Screen 5</b><br>6700 Middle Fiskville Rd, Austin, TX 78752<br>Shorts Program 9: Sense of Place</p>
+     </div>
+     <div class="tk-stub">
+      <a href="https://maps.apple.com/?q=Galaxy+Theatre&amp;address=6700%20Middle%20Fiskville%20Rd%2C%20Austin%2C%20TX%2078752" data-track="map-apple">Apple Maps</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Galaxy+Theatre+6700+Middle+Fiskville+Rd+Austin+TX+78752" data-track="map-google">Google Maps</a>
+      <a class="g" href="https://mindshawk.github.io/chrisguerrero/cal/burbank-2.ics" data-track="calendar-2">Add to Apple / Outlook</a>
+      <a class="g" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=No+One+Wants+To+Live+In+Burbank+(AFF+Second+Screening)&amp;dates=20261105T010000Z/20261105T025500Z&amp;ctz=America/Chicago&amp;location=Galaxy+Theatre%2C+Screen+5%2C+6700+Middle+Fiskville+Rd%2C+Austin%2C+TX+78752&amp;details=Shorts+Program+9%3A+Sense+of+Place.+https%3A%2F%2Fmindshawk.github.io%2Fchrisguerrero%2F" data-track="gcal-2">Add to Google</a>
+     </div>
     </div>
-  </article>
-
-</section>
-
-
-
-<section class="n film" aria-labelledby="h-film">
-  <p class="lb" aria-hidden="true">The film · Comedy · Drama</p>
-  <h2 id="h-film">NO ONE WANTS TO LIVE IN BURBANK</h2>
-  <div class="chips"><span>5:51</span><span>2026</span><span>Short film</span></div>
-  <p class="log">A couple breaking up fights over who keeps the cat, but it's really about the push and pull that keeps driving them together and apart.</p>
-
-  <div class="gal" role="region" aria-label="Stills from the film" tabindex="0">
-
-    <figure class="frame"><picture><source srcset="assets/still-2.avif" type="image/avif"><img src="assets/still-2.webp" width="560" height="420" loading="lazy" decoding="async" alt="Still 1 of 5 from No One Wants To Live In Burbank"></picture><figcaption><span>Still 1 / 5</span><span>2026</span></figcaption></figure>
-
-    <figure class="frame"><picture><source srcset="assets/still-4.avif" type="image/avif"><img src="assets/still-4.webp" width="560" height="420" loading="lazy" decoding="async" alt="Still 2 of 5 from No One Wants To Live In Burbank"></picture><figcaption><span>Still 2 / 5</span><span>2026</span></figcaption></figure>
-
-    <figure class="frame"><picture><source srcset="assets/still-3.avif" type="image/avif"><img src="assets/still-3.webp" width="560" height="420" loading="lazy" decoding="async" alt="Still 3 of 5 from No One Wants To Live In Burbank"></picture><figcaption><span>Still 3 / 5</span><span>2026</span></figcaption></figure>
-
-    <figure class="frame"><picture><source srcset="assets/still-8.avif" type="image/avif"><img src="assets/still-8.webp" width="560" height="420" loading="lazy" decoding="async" alt="Still 4 of 5 from No One Wants To Live In Burbank"></picture><figcaption><span>Still 4 / 5</span><span>2026</span></figcaption></figure>
-
-    <figure class="frame"><picture><source srcset="assets/still-7.avif" type="image/avif"><img src="assets/still-7.webp" width="560" height="420" loading="lazy" decoding="async" alt="Still 5 of 5 from No One Wants To Live In Burbank"></picture><figcaption><span>Still 5 / 5</span><span>2026</span></figcaption></figure>
-
+   </article>
   </div>
-  <p class="swipe" aria-hidden="true">Swipe &rarr;</p>
-
-  <dl class="cr">
-
-    <div><dt>Directed by</dt><dd>Christopher Guerrero</dd></div>
-
-    <div><dt>Written and produced by</dt><dd>Christopher Guerrero, Ryan Dee Gilmour</dd></div>
-
-    <div><dt>Cinematography by</dt><dd>Gavin Murray</dd></div>
-
-    <div><dt>Music and sound by</dt><dd>Paul Claypool</dd></div>
-
-    <div><dt>Starring</dt><dd>Pumpkin “Warrioress Of Troy” Guerrero (in her debut role), Gabrielle Maiden, Kyle Helf, Lucy Blee</dd></div>
-
-  </dl>
-  <div class="laurel"><img src="assets/laurel.webp" width="260" height="196" loading="lazy" alt="Official Selection, Austin Film Festival 2026"><p>World Premiere, Austin Film Festival 2026</p></div>
+ </div>
 </section>
 
+<!-- 6 COUNTDOWN -->
+<section class="card wash wash--navy" id="screener" aria-labelledby="h-count">
+ <span data-mark="loop" style="--w:150px;bottom:1%;right:-20px;--c:var(--paper);--sw:5"></span>
+ <div class="in-w">
+  <div class="panel panel--ink torn cd" style="--rot:-.8deg;transform:rotate(-.8deg)">
+   <svg class="lock" viewBox="0 0 64 72" aria-hidden="true"><path d="M17 32V22a15 15 0 0 1 30 0v10" fill="none" stroke="#EFEBE5" stroke-width="7" stroke-linecap="round"/><rect x="6" y="32" width="52" height="36" rx="3" fill="#F0A338"/><circle cx="32" cy="46" r="5" fill="#15110F"/><rect x="29.5" y="48" width="5" height="12" fill="#15110F"/></svg>
+   <h3 id="h-count">Screener unlocks Fri Nov 6</h3>
+   <p id="days">Locked until then</p>
+   <a class="btn btn--neon" href="https://watch.burbank-screener.workers.dev">Get a reminder</a>
+  </div>
+ </div>
+</section>
 
+<!-- 7 FILM -->
+<section class="card wash wash--teal" id="film" style="--wash:#2a6f68" aria-labelledby="h-film">
+ <span data-mark="heartTorn" style="--w:80px;top:6px;right:4%;--c:var(--brick);--sw:8"></span>
+ <span data-mark="cross" style="--w:50px;bottom:1%;left:3%;--c:var(--neon)"></span>
+ <div class="in-w">
+  <span class="credit" aria-hidden="true">The film</span>
+  <h2 class="slam sm" id="h-film">No One Wants To Live In Burbank</h2>
+  <div class="filmtop">
+   <div class="panel torn" style="--rot:.5deg;transform:rotate(.5deg)">
+    <div class="chips"><span>Comedy</span><span>Drama</span><span>5:51</span><span>2026</span><span>Short film</span></div>
+    <p class="log">A couple breaking up fights over who keeps the cat, but it's really about the push and pull that keeps driving them together and apart.</p>
+   </div>
+   <div class="panel torn torn--b" style="--rot:-.6deg;transform:rotate(-.6deg)">
+    <ul class="credits" style="margin-top:0">
+     <li><b>Directed by</b>Christopher Guerrero</li>
+     <li><b>Written and produced by</b>Christopher Guerrero, Ryan Dee Gilmour</li>
+     <li><b>Cinematography by</b>Gavin Murray</li>
+     <li><b>Music and sound by</b>Paul Claypool</li>
+     <li><b>Starring</b>Pumpkin "Warrioress Of Troy" Guerrero (in her debut role), Gabrielle Maiden, Kyle Helf, Lucy Blee</li>
+    </ul>
+   </div>
+  </div>
+  <div class="stills" role="group" aria-label="Stills from the film">
+   <figure class="polaroid slam" style="--rot:-4deg"><i class="pin" style="--pin:var(--red)"></i><img src="kit/img/s1.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 1 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:3deg"><i class="pin" style="--pin:var(--teal)"></i><img src="kit/img/s2.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 2 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:-2deg"><i class="pin" style="--pin:var(--sodium)"></i><img src="kit/img/s3.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 3 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:5deg"><i class="pin" style="--pin:var(--brick)"></i><img src="kit/img/s9.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 4 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:-5deg"><i class="pin" style="--pin:var(--red)"></i><img src="kit/img/s10.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 5 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:2deg"><i class="pin" style="--pin:var(--teal)"></i><img src="kit/img/s11.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 6 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:4deg"><i class="pin" style="--pin:var(--sodium)"></i><img src="kit/img/s12.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 7 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:-3deg"><i class="pin" style="--pin:var(--brick)"></i><img src="kit/img/s13.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 8 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:3deg"><i class="pin" style="--pin:var(--red)"></i><img src="kit/img/s14.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 9 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:-4deg"><i class="pin" style="--pin:var(--teal)"></i><img src="kit/img/s15.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 10 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:2deg"><i class="pin" style="--pin:var(--sodium)"></i><img src="kit/img/s16.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 11 of 12 from No One Wants To Live In Burbank"></figure>
+   <figure class="polaroid slam" style="--rot:-2deg"><i class="pin" style="--pin:var(--brick)"></i><img src="kit/img/s17.webp" width="720" height="540" loading="lazy" decoding="async" alt="Still 12 of 12 from No One Wants To Live In Burbank"></figure>
+  </div>
+  <div class="lauwrap"><div class="laur"><div class="paper torn--b"><img src="kit/img/laurels.webp" width="360" height="309" loading="lazy" alt="Official Selection, Austin Film Festival 2026"></div></div><p>World Premiere, Austin Film Festival 2026</p></div>
+ </div>
+</section>
 
-<section class="n bd" aria-labelledby="h-about">
-
-  <picture><source srcset="assets/bd-about.avif" type="image/avif"><img src="assets/bd-about.webp" alt="" width="640" height="480" loading="lazy" decoding="async"></picture>
-
-  <p class="lb" aria-hidden="true">About</p>
-  <h2 id="h-about">About Chris</h2>
-  <p class="kick">Selma, CA to Austin, TX.</p>
+<!-- 8 ABOUT -->
+<section class="card wash wash--sodium" id="about" style="--wash:#C9863A" aria-labelledby="h-about">
+ <span data-mark="zigzag" style="--w:150px;top:0;right:-20px;--c:var(--red);--sw:6"></span>
+ <span data-mark="star" style="--w:70px;bottom:4%;left:4%;--c:var(--navy)"></span>
+ <div class="in-w">
+  <span class="credit" style="color:var(--ink);text-shadow:none" aria-hidden="true">About</span>
+  <h2 class="slam" id="h-about">About <em style="color:var(--red)">Chris</em></h2>
   <div class="about">
-    <figure class="frame"><picture><source srcset="assets/chris.avif" type="image/avif"><source srcset="assets/chris.webp" type="image/webp"><img src="assets/chris.jpg" alt="Chris Guerrero" width="360" height="480" loading="lazy" decoding="async" style="aspect-ratio:3/4;object-fit:cover;object-position:top"></picture><figcaption>Selma, CA</figcaption></figure>
-    <div class="bio"><p class="lead">One of BuzzFeed's early video directors: helped create Tasty and The Try Guys, made comedy at Super Deluxe, directed Funny Or Die commercials, and launched Dwayne Johnson's YouTube channel as director and EP.</p></div>
-  </div>
-  <div class="bio wide">
-
+   <div class="chrispol"><figure class="polaroid slam"><i class="pin" style="--pin:var(--navy)"></i><img src="kit/img/chris_tall.webp" width="360" height="480" loading="lazy" decoding="async" alt="Chris Guerrero"><figcaption>Selma, CA</figcaption></figure></div>
+   <div class="panel torn" style="--rot:-.6deg;transform:rotate(-.6deg)"><span class="strip">Selma, CA to Austin, TX</span>
+    <p style="margin-top:16px">One of BuzzFeed's early video directors: helped create Tasty and The Try Guys, made comedy at Super Deluxe, directed Funny Or Die commercials, and launched Dwayne Johnson's YouTube channel as director and EP.</p></div>
+   <div class="panel torn torn--b" style="--rot:.7deg;transform:rotate(.7deg)">
     <p>2025 Frieze Los Angeles Film Award fellow (his short Reprogrammed won the Audience Award). Adjunct directing professor at USC.</p>
-
-    <p>Chicano writer-director from Selma, California, a Central Valley raisin town.</p>
-
+    <p>Chicano writer-director from Selma, California, a Central Valley raisin town.</p></div>
   </div>
+ </div>
 </section>
 
-
-
-
-
-<section class="n bd tease" aria-labelledby="h-feat">
-
-  <picture><source srcset="assets/bd-feature.avif" type="image/avif"><img src="assets/bd-feature.webp" alt="" width="640" height="480" loading="lazy" decoding="async"></picture>
-
-  <p class="lb" aria-hidden="true">In development</p>
-  <h2 id="h-feat">Now developing the feature</h2>
-  <p class="tl">Funny until it isn't.</p>
-  <p class="tz">A video store. A kitchen timer. A jacket that never comes back.</p>
-  <p class="lg">A broke Echo Park video-store lifer and his music-exec girlfriend, who shelved her bass to pay rent, break up, but their building was sold, so they try 30 days apart under one roof. Then he learns the director they both depend on is abusing a young woman and stealing her work, and saving his store and her Burbank house means staying quiet.</p>
-  <a class="btn fill" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail data-track="deck">Get the deck with the screener</a>
+<!-- 9 DEV -->
+<section class="card wash wash--red dev" id="dev" style="--wash:#7d2430" aria-labelledby="h-feat">
+ <span data-mark="cross" style="--w:56px;top:6px;right:6%;--c:var(--sodium);--sw:8"></span>
+ <span data-mark="burst" style="--w:100px;top:3%;left:-10px;--c:var(--paper);--sw:5"></span>
+ <div class="in-w">
+  <span class="credit" aria-hidden="true">In development</span>
+  <h2 class="slam" id="h-feat">Now developing <em>the feature</em></h2>
+  <div class="panel torn" style="--rot:-.5deg;transform:rotate(-.5deg)">
+   <p class="tag">Funny until it isn't.</p>
+   <p class="trip">A video store. A kitchen timer. A jacket that never comes back.</p>
+   <p>A broke Echo Park video-store lifer and his music-exec girlfriend, who shelved her bass to pay rent, break up, but their building was sold, so they try 30 days apart under one roof. Then he learns the director they both depend on is abusing a young woman and stealing her work, and saving his store and her Burbank house means staying quiet.</p>
+   <a class="btn btn--neon" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail data-track="deck">Get the deck with the screener</a>
+  </div>
+ </div>
 </section>
 
-
-<section class="n" aria-labelledby="h-links">
-  <p class="lb" aria-hidden="true">Everything else</p>
-  <h2 id="h-links">All links</h2>
-  <ul class="links">
-
-    <li><a href="https://mindshawk.github.io/chrisguerrero/chris.vcf" data-track="save-contact">Save my contact <small>.vcf</small></a></li>
-
-    <li><a href="https://www.instagram.com/mindshawk/" data-track="instagram">Instagram <small>@mindshawk</small></a></li>
-
-    <li><a href="https://mindshawk.github.io/chrisguerrero/cal/burbank-all.ics" data-track="calendar-all">Both screenings <small>calendar</small></a></li>
-
-    <li><a href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail data-track="mail-tile">Pitch deck <small>comes with the screener</small></a></li>
-
-    <li><a href="https://vimeo.com/chrisguerrero" data-track="vimeo">Vimeo <small>vimeo.com/chrisguerrero</small></a></li>
-
-    <li><a href="https://www.linkedin.com/in/christopherallenguerrero/" data-track="linkedin">LinkedIn <small>christopherallenguerrero</small></a></li>
-
-    <li><a href="https://www.christopherguerrero.com" data-track="website">Website <small>christopherguerrero.com</small></a></li>
-
-    <li><a href="https://renderrush.digital.vistaprint.io/s/tx1yqgba07gidriq" data-track="vistaprint">Digital card <small>Vistaprint</small></a></li>
-
-    <li><a href="mailto:chris@guerreroproductions.com" data-track="email">Email <small>chris@guerreroproductions.com</small></a></li>
-
-    <li><a href="tel:+15597793692" data-track="phone">Call or text <small>(559) 779-3692</small></a></li>
-
+<!-- 10 LINKS -->
+<section class="card wash wash--ink" id="links" aria-labelledby="h-links">
+ <span data-mark="star" style="--w:56px;top:6px;right:8%;--c:var(--neon);--sw:6"></span>
+ <div class="in-w">
+  <span class="credit" aria-hidden="true">Everything else</span>
+  <h2 class="slam" id="h-links">All <em>links</em></h2>
+  <ul class="all">
+   <li><a href="https://mindshawk.github.io/chrisguerrero/chris.vcf" data-track="save-contact"><b>Save my contact</b><small>.vcf</small></a></li>
+   <li><a href="https://www.instagram.com/mindshawk/" data-track="instagram"><b>Instagram</b><small>@mindshawk</small></a></li>
+   <li><a href="https://mindshawk.github.io/chrisguerrero/cal/burbank-all.ics" data-track="calendar-all"><b>Both screenings</b><small>calendar</small></a></li>
+   <li><a href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" data-mail data-track="mail-tile"><b>Pitch deck</b><small>comes with the screener</small></a></li>
+   <li><a href="https://vimeo.com/chrisguerrero" data-track="vimeo"><b>Vimeo</b><small>vimeo.com/chrisguerrero</small></a></li>
+   <li><a href="https://www.linkedin.com/in/christopherallenguerrero/" data-track="linkedin"><b>LinkedIn</b><small>christopherallenguerrero</small></a></li>
+   <li><a href="https://www.christopherguerrero.com" data-track="website"><b>Website</b><small>christopherguerrero.com</small></a></li>
+   <li><a href="https://renderrush.digital.vistaprint.io/s/tx1yqgba07gidriq" data-track="vistaprint"><b>Digital card</b><small>Vistaprint</small></a></li>
+   <li><a href="mailto:chris@guerreroproductions.com" data-track="email"><b>Email</b><small>chris@guerreroproductions.com</small></a></li>
+   <li><a href="tel:+15597793692" data-track="phone"><b>Call or text</b><small>(559) 779-3692</small></a></li>
   </ul>
+ </div>
 </section>
 </main>
 
-<footer>
-  <div class="stripe" aria-hidden="true"></div>
-  <div class="in">
-    <a class="also" href="https://mindshawk.github.io/haleyhoogland/?src=chris" data-track="nav-haley">Also meet Haley Hoogland<small>Producer + voice actor</small></a>
-    <div class="row"><button class="btn" id="cpL" type="button" data-track="copy-link">Copy page link</button><button class="btn" id="sh" type="button" data-track="share">Share</button></div>
-    <p class="sig">Guerrero Productions · AFF 2026</p>
+<!-- 11 FOOTER -->
+<footer class="card wash wash--brick" style="--wash:#5b3b2e">
+ <span data-mark="heartTorn" style="--w:90px;top:6%;right:6%;--c:var(--brick);--sw:8"></span>
+ <div class="in-w">
+  <div class="panel torn" style="--rot:.4deg;transform:rotate(.4deg);max-width:640px">
+   <p><a class="hal" href="https://mindshawk.github.io/haleyhoogland/?src=chris" data-track="nav-haley">Also meet Haley Hoogland<small>Producer + voice actor</small></a></p>
+   <div class="row"><button class="btn" id="cpL" type="button" data-track="copy-link">Copy page link</button><button class="btn" id="sh" type="button" data-track="share">Share</button></div>
+   <p class="t-label" style="margin:0">Guerrero Productions · AFF 2026</p>
   </div>
+ </div>
 </footer>
 
-<div id="stick" aria-hidden="true"><a class="big" id="go2" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" tabindex="-1" data-track="mail-sticky"><span>Get the screener + deck</span></a></div>
+<div id="stick" aria-hidden="true"><a class="go" id="go2" href="mailto:chris@guerreroproductions.com?subject=Met%20at%20AFF%3A%20Burbank%20screener%20%2B%20deck&amp;body=Hey%20Chris!%0D%0A%0D%0AWe%20met%20at%20Austin%20Film%20Festival.%20I'm%20%5Byour%20name%5D%2C%20%5Bwhat%20you%20do%5D.%0D%0A%0D%0ASend%20me%20the%20No%20One%20Wants%20To%20Live%20In%20Burbank%20screener%20and%20your%20deck.%0D%0A%0D%0A----%0D%0AChris%20Guerrero%2C%20Director.%20Writer.%20Producer.%0D%0Achris%40guerreroproductions.com%20%7C%20(559)%20779-3692%0D%0AInstagram%20%40mindshawk%0D%0ABurbank%20at%20AFF%3A%20Fri%20Oct%2030%2C%203%3A10pm%20%2F%20Wed%20Nov%204%2C%207%3A00pm%0D%0Amindshawk.github.io%2Fchrisguerrero" tabindex="-1" data-track="mail-sticky"><span>Get the screener + deck</span></a></div>
+<nav class="bar" aria-label="Quick actions, always available">
+ <a href="#trailer" data-track="bar-trailer"><b aria-hidden="true">&#9654;&#xFE0E;</b>Trailer</a>
+ <a href="#email" data-track="bar-email"><b aria-hidden="true">@</b>Email me</a>
+ <a href="https://mindshawk.github.io/chrisguerrero/chris.vcf" data-track="bar-vcard"><b aria-hidden="true">+</b>Save contact</a>
+</nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<script src="kit/kit.js"></script>
+<script>
+if(location.search.indexOf("static")>-1)document.querySelectorAll(".slam").forEach(function(e){e.classList.add("in")});
+if(location.search.indexOf("static")>-1)document.querySelectorAll("img[loading=lazy]").forEach(function(i){i.loading="eager"});
+(function(){var el=document.getElementById("days");if(!el)return;var d=Math.ceil((new Date("2026-11-06T00:00:00-06:00")-Date.now())/864e5);if(d>1){el.textContent=d+" days to go"}else if(d===1){el.textContent="1 day to go"}else{var h=document.getElementById("h-count");if(h)h.textContent="The screener is open";el.textContent="It unlocked Fri Nov 6.";var a=el.parentNode.querySelector("a.btn");if(a)a.textContent="Watch it now"}})();
+</script>
 <script>
 (function(){
 var C={"to":"chris@guerreroproductions.com","sub":"Met at AFF: Burbank screener + deck","page":"https://mindshawk.github.io/chrisguerrero/","lines":["Hey Chris!","","We met at Austin Film Festival. I'm [your name], [what you do].","","Send me the No One Wants To Live In Burbank screener and your deck.","","----","Chris Guerrero, Director. Writer. Producer.","chris@guerreroproductions.com | (559) 779-3692","Instagram @mindshawk","Burbank at AFF: Fri Oct 30, 3:10pm / Wed Nov 4, 7:00pm","mindshawk.github.io/chrisguerrero"],"shareTitle":"Chris Guerrero · Burbank at AFF 2026"};
@@ -453,19 +552,6 @@ if(a&&b){
 }
 })();
 </script>
-<!--
-  GoatCounter analytics. Account code: chrisguerrero
-  Cookie free, async, never blocks render. The page works fine if this fails to load.
-
-  Attributes Builder 1 adds to links:
-    data-track="<label>"   Any link or button with this attribute logs an event with
-                           path "out/<label>" when tapped. Example: data-track="instagram".
-    Suggested labels: mail, mail-tile, save-contact, calendar-1, calendar-2, calendar-all,
-    instagram, website, vimeo, linkedin, vistaprint, deck, copy-email, copy-message, share.
-
-  The ?src= query param (qr, guide, ig, flyer, site) is logged as the referrer, and also as
-  an event named "src/<value>" so it shows in the Events view.
--->
 <script>
   window.goatcounter = {
     no_onload: true,
@@ -511,5 +597,10 @@ if(a&&b){
   })();
 </script>
 
+<script>
+// Sticky bar: hidden while the hero's three action strips are on screen, slides up once they scroll away.
+(function(){var b=document.querySelector(".bar"),q=document.getElementById("heroActions");if(!b||!q||!("IntersectionObserver" in window)){if(b)b.classList.add("show");return}
+new IntersectionObserver(function(e){b.classList.toggle("show",!e[0].isIntersecting&&e[0].boundingClientRect.top<0)}).observe(q)})();
+</script>
 </body>
 </html>

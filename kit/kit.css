@@ -1,0 +1,85 @@
+/* Burbank web kit: the trailer's design language for the web.
+   Fonts: Anton (titles), Oswald 500 (labels), Space Mono (body). Nothing else.
+   Rules: no em or en dashes in visible copy; no QR; never any screener details. */
+@font-face{font-family:Anton;src:url(fonts/anton.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Oswald;src:url(fonts/oswald-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Space Mono";src:url(fonts/spacemono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Space Mono";src:url(fonts/spacemono-700.woff2) format("woff2");font-weight:700;font-display:swap}
+
+:root{
+  /* the trailer's palette: the pitch deck's hues pushed brighter */
+  --red:#BA1520;--brick:#E43723;--rust:#EE6933;--sodium:#F0A338;--teal:#2B9084;--navy:#1A539B;--steel:#276CAB;
+  --paper:#EFEBE5;--paper2:#D7CDBC;--ink:#15110F;--deep:#0A0706;--mute:#8A8175;--neon:#FFE600;
+  --title:Anton,Impact,sans-serif;--label:Oswald,"Arial Narrow",sans-serif;--body:"Space Mono",ui-monospace,monospace;
+  --tap:48px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font:400 16px/1.55 var(--body)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--neon);outline-offset:3px;box-shadow:0 0 0 7px var(--deep)}
+
+/* 35mm grain over everything: one 256px tile of the real scan, low opacity, no blend modes (iOS friendly). */
+.grain{position:fixed;inset:-50%;pointer-events:none;z-index:50;background:url(img/grain.webp) 0 0/256px;opacity:.13;
+  animation:grain .5s steps(4) infinite}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-37px,21px)}50%{transform:translate(18px,-41px)}75%{transform:translate(-11px,33px)}}
+
+/* Colour wash sections (background layer: pulled back, own vignette) */
+.wash{position:relative;isolation:isolate}
+.wash::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--wash,var(--teal));filter:saturate(.55) brightness(.78)}
+.wash::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 85% 80% at 50% 45%,transparent 40%,rgba(10,7,6,.72) 100%),
+  repeating-linear-gradient(90deg,transparent 0 13%,rgba(239,235,229,.05) 13% 13.3%,transparent 13.3% 41%,rgba(10,7,6,.12) 41% 47%,transparent 47% 100%)}
+.wash--red{--wash:var(--red)}.wash--teal{--wash:var(--teal)}.wash--navy{--wash:var(--navy)}.wash--sodium{--wash:var(--sodium)}.wash--brick{--wash:var(--brick)}.wash--ink{--wash:#1B1512}
+
+/* Torn paper (clip-path, three tear patterns) */
+.torn{clip-path:polygon(0 3%,6% 0,13% 2%,21% 0,30% 3%,38% 1%,47% 3%,55% 0,63% 2%,71% 0,80% 3%,88% 1%,95% 3%,100% 1%,99% 25%,100% 50%,99% 75%,100% 97%,93% 100%,85% 98%,77% 100%,68% 97%,60% 100%,51% 98%,42% 100%,34% 97%,26% 100%,17% 98%,9% 100%,0 98%,1% 75%,0 50%,1% 25%)}
+.torn--b{clip-path:polygon(0 1%,8% 3%,16% 0,24% 2%,33% 0,41% 3%,50% 1%,58% 3%,67% 0,75% 2%,84% 0,92% 3%,100% 0,98% 30%,100% 60%,98% 100%,90% 97%,81% 100%,72% 98%,63% 100%,54% 97%,45% 100%,36% 98%,27% 100%,18% 97%,9% 100%,0 97%,2% 60%,0 30%)}
+.paper-fill{background:var(--fill,var(--red))}
+
+/* Polaroid */
+.polaroid{--rot:-3deg;position:relative;background:linear-gradient(160deg,var(--paper),#E8E1D2 55%,#D9CDB4);padding:5.5% 5.5% 20%;
+  transform:rotate(var(--rot));box-shadow:4px 12px 18px rgba(0,0,0,.5);border-radius:2px}
+.polaroid img{aspect-ratio:1;object-fit:cover;width:100%;box-shadow:inset 0 0 18px rgba(0,0,0,.45)}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:4%;text-align:center;color:var(--ink);font:500 13px/1.2 var(--label);letter-spacing:.12em;text-transform:uppercase}
+.pin{position:absolute;left:50%;top:-6px;width:26px;height:26px;margin-left:-13px;border-radius:50%;
+  background:radial-gradient(circle at 35% 32%,rgba(242,237,228,.9),var(--pin,var(--red)) 22%,#3F171B);box-shadow:6px 8px 6px rgba(0,0,0,.45);z-index:2}
+.tape{position:absolute;width:42%;height:30px;top:-12px;left:-6%;transform:rotate(-30deg);z-index:2;
+  background:linear-gradient(175deg,rgba(215,205,188,.82),rgba(201,191,174,.66) 60%,rgba(169,118,47,.5));
+  clip-path:polygon(3% 0,97% 4%,100% 30%,96% 60%,100% 100%,4% 96%,0 70%,4% 40%)}
+.tape--r{left:auto;right:-6%;transform:rotate(28deg)}
+
+/* Type */
+.t-title{font:400 clamp(52px,15vw,148px)/.92 var(--title);text-transform:uppercase;letter-spacing:.005em;margin:0;text-shadow:.05em .05em 0 var(--deep)}
+.t-label{font:500 15px/1.2 var(--label);letter-spacing:.16em;text-transform:uppercase}
+.label-tape{display:inline-block;font:700 15px/1 var(--body);letter-spacing:.07em;color:var(--paper);background:var(--deep);padding:8px 12px 7px;
+  box-shadow:0 5px 8px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.1);transform:rotate(var(--rot,-1deg))}
+.label-tape--red{background:var(--red)}.label-tape--sodium{background:var(--sodium);color:var(--ink)}
+.strip{display:inline-block;font:500 18px/1.1 var(--label);letter-spacing:.12em;text-transform:uppercase;padding:6px 14px 4px;background:var(--sodium);color:var(--ink);transform:rotate(var(--rot,-2deg))}
+
+/* Buttons: 48px tap targets */
+.btn{display:flex;align-items:center;gap:12px;min-height:var(--tap);padding:12px 16px;text-decoration:none;border:0;cursor:pointer;
+  font:700 15px/1.2 var(--body);color:var(--ink);background:var(--paper);box-shadow:0 5px 0 var(--deep);transform:rotate(var(--rot,0))}
+.btn--neon{background:var(--neon)}.btn--red{background:var(--brick);color:var(--paper)}
+.btn small{display:block;font:400 12px/1.3 var(--body);opacity:.8}
+.btn:active{transform:translateY(3px) rotate(var(--rot,0));box-shadow:0 2px 0 var(--deep)}
+
+/* Hand drawn marks: inline SVG built by kit.js from marks.json; the line "boils" through 3 variants. */
+.mark{position:absolute;pointer-events:none;width:var(--w,120px);color:var(--c,var(--neon))}
+.mark svg{width:100%;height:auto;overflow:visible}
+.mark path{fill:none;stroke:currentColor;stroke-width:var(--sw,7);stroke-linecap:round;stroke-linejoin:round}
+
+/* Slam in on scroll. Off for reduced motion. */
+.slam{opacity:0;transform:scale(1.25) rotate(calc(var(--rot,0deg) + 6deg))}
+.slam.in{opacity:1;transform:scale(1) rotate(var(--rot,0deg));transition:transform .32s cubic-bezier(.2,1.6,.4,1),opacity .08s}
+@media (prefers-reduced-motion:reduce){.slam,.slam.in{opacity:1;transform:rotate(var(--rot,0deg));transition:none}.grain{animation:none}}
+
+/* Trailer: poster facade; the Vimeo player loads only on tap. */
+.trailer{position:relative;aspect-ratio:16/9;background:var(--deep);overflow:hidden}
+.trailer img{width:100%;height:100%;object-fit:cover}
+.trailer button{position:absolute;inset:0;display:grid;place-items:center;background:transparent;border:0;cursor:pointer;color:var(--ink)}
+.trailer button span{display:flex;align-items:center;gap:10px;background:var(--neon);padding:14px 22px;font:500 18px/1 var(--label);letter-spacing:.14em;text-transform:uppercase;box-shadow:0 6px 0 var(--deep)}
+.trailer iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.trailer--v{aspect-ratio:9/16;width:min(100%,calc(80svh*9/16));margin-inline:auto}
